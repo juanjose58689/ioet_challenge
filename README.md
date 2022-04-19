@@ -41,7 +41,7 @@ The options are as follows:
 - Run the code using all the ".txt" file in the input_files folder.
 
 	` $ python3 main.py -f input_files`
-- Run the code saving the results in the "output_filles/output.txt" file.
+- Run the code saving the results in the "output_files/output.txt" file.
 
 	` $ python3 main.py -o output_files/output.txt`
 ## Compile
