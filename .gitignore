@@ -1,2 +1,3 @@
 # Removing the compiled files
 *.pyc
+Compilation/*

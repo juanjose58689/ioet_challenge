@@ -19,9 +19,15 @@ Output:
 
 	The amount to pay RENE is: 215 USD
 
+The solution should provide a terminal aplication which has the goal to calculate the total that the company has to pay an employee, based on the hours they worked and the times during which they worked.
+
+The input is a ".txt" file with rows as shown previously in "Input" and the result should be as the "Output" mentioned before, for each employee in the input file.
+
 ## How to run
+Download this solution and open a terminal console in the downloaded location "ioet_challenge".
+
 ### Options
-The program has various options (parameters), to see the list run the netx command, it works in Windows and Linux.
+The program has various options (parameters), to see the list run the next command, it works in Windows and Linux.
 
 `$ python3 main.py --help`
 
@@ -59,7 +65,11 @@ It will generate a folder called "Compilation" with the next structure:
 	- test.txt
 
 ## Test
-To be implemented
+For the unit testing of the solution were implemented six unit-test, each for one method of any class described in the next section.
+
+To perfom the test run the next command:
+
+`$ python3 unit_test.py`
 
 ## How it works
 In order to approach this problem, an object-oriented solution was implemented. Three classes were implemented to manage the different sides of the challenge.

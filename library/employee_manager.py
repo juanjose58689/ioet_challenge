@@ -43,6 +43,8 @@ class Employee_Manager():
             start = dt.strptime(day['Start'], format_)
             end = dt.strptime(day['End'], format_)
 
+            cls.validate_hours(start, end, day['Day'])
+
             if cls.days[day['Day']] < 5:
                 wage_1, wage_2, wage_3 = cls.wages[:3]
             else:
@@ -67,7 +69,16 @@ class Employee_Manager():
             else:
                 aux_salary += (end - start).seconds * wage_3
 
-        return aux_salary
+        return round(aux_salary, 2)
+
+    def validate_hours(cls, start, end, day):
+        if end < start:
+            raise Exception(f'Time worked hours for employee {cls.name} have an error, end time is smaller that the start time in day {day}')
+        
+        if start.hour == 0 and start.minute == 0:
+            raise Exception(f'Start time for day {day} should begin at minimum 00:01, not 00:00')
+
+        return True
             
 
             
