@@ -69,7 +69,7 @@ For the unit testing of the solution were implemented six unit-test, each for on
 
 To perfom the test run the next command:
 
-`$ python3 unit_test.py`
+`$ python3 unit_test.py -v`
 
 ## How it works
 In order to approach this problem, an object-oriented solution was implemented. Three classes were implemented to manage the different sides of the challenge.
